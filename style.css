@@ -39,4 +39,33 @@ li {
 a { 
     color: currentColor;
     text-decoration:none;
- } 
+ }
+ .main-filtro{
+     width: 533px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ }
+ .main-fButton{
+    font-family: 'VT323';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #D8C7C7;
+
+    background: #2B2F4A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+ }
+ .jogo01{
+     width: 528px;
+     height: 70px;
+     background-color: #232038;
+     display: flex;
+     flex-direction: row;
+ }
