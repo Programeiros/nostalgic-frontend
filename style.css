@@ -18,8 +18,6 @@ header{
     align-items: center;
     flex-direction: column;
     background-repeat:no-repeat;
-
-    
 }
 .nomeSite{
     margin-top: 25px;
@@ -27,10 +25,6 @@ header{
     font-style: normal;
     font-weight: 400;
     font-size: 48px;
-    
-   
-    
-   
 }
 li {
     list-style-type: none;
@@ -63,9 +57,18 @@ a {
 
  }
  .jogo01{
-     width: 528px;
-     height: 70px;
+     width: 50%;
+     height: 140px;
      background-color: #232038;
      display: flex;
      flex-direction: row;
+ }
+ .nomeJogo, .dadosJogo{
+     display: flex;
+     flex-direction: column;
+ }
+ .maisJogos{
+    width: 50%;
+    height: 40px;
+    background-color: #232038;
  }
