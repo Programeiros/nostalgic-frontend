@@ -1,66 +1,134 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="./css/style.css" rel="stylesheet">
     <title>Nostalgic</title>
 </head>
+
 <body>
-    <header>
+
+    <header class="hero">
         <h1 class="name__site">Nostalgic</h1>
-        <ul class="menu">
-            <li><a href="#">Inicio</a> </li>
-            <li> | </li>
-            <li><a href="#">Projeto</a></li>
-        </ul>
-
+        <nav class="menu">
+            <ul class="menu__items">
+                <li class="menu__item">
+                    <a href="#">Início</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#">Projeto</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <section>
-            <h1>Os classicos mais famosos</h1>
-            <img src="./img/snowboardkids2.png" alt="snowboardkids2">
-            <img src="./img/zelda.png" alt="zelda">
-            <img src="./img/donkey.png" alt="donkey kong">
-        </section>
-        <section>
-            <h2>Vale a pena jogar novamente</h2>
-            <img src="./img/snowboardkids2.png" alt="snowboardkids2">
-            <img src="./img/zelda.png" alt="zelda">
-            <img src="./img/donkey.png" alt="donkey kong">
-            
-        </section>
-        <section class="button__filter">
-            <input type="button" value="Ano" class="button__filter--game">
-            <input type="button" value="Todos" class="button__filter--game">
-            <input type="button" value="PSN" class="button__filter--game">
-            <input type="button" value="SNES" class="button__filter--game">
-            <input type="button" value="Lorem" class="button__filter--game">
-        </section>
-        <section>
-            <div class="game">
-            <img src="./img/snowboardkids2.png" alt="snowboardkids2">
-            <h2 class="game__name">Snowboard Kids 2 </h2> 
-            
-            <h3 class="game__data">Nintendo 64 - 1999</h3>
-            </div>
-            <br> 
 
-            <div class="game">
-            <img src="./img/snowboardkids2.png" alt="snowboardkids2">
-            </div>
-            <br>
+    <div class="games__content">
 
-            <div class="game">    
-            <img src="./img/snowboardkids2.png" alt="snowboardkids2">
-            </div>
-            <input type="button" value="Caregar mais jogos" class="more__games">
-        </section>
+        <main class="games__showcase">
 
-    </main>
+            <section class="games__suggested">
+                <h2>Os clássicos mais famosos</h2>
+                <div class="games__items">
+                    <div class="games__background"></div>
+                    <img src="./img/snowboardkids2.png" alt="snowboardkids2">
+                    <img src="./img/zelda.png" alt="zelda">
+                    <img src="./img/donkey.png" alt="donkey kong">
+                    <img src="./img/donkey.png" alt="donkey kong">
+                    <img src="./img/donkey.png" alt="donkey kong">
+                    <img src="./img/donkey.png" alt="donkey kong">
+                    <img src="./img/donkey.png" alt="donkey kong">
+                </div>
+            </section>
+
+            <section class="games__suggested">
+                <h2>Vale a pena jogar novamente</h2>
+                <div class="games__items">
+                    <div class="games__background"></div>
+                    <img src="./img/snowboardkids2.png" alt="snowboardkids2">
+                    <img src="./img/zelda.png" alt="zelda">
+                    <img src="./img/donkey.png" alt="donkey kong">
+                </div>
+            </section>
+
+            <div class="button__filter">
+                
+                <input type="radio" value="ano" id="ano" name="filter" class="button__filter--game">
+                <label for="ano">Ano</label>
+                
+                <input type="radio" value="todos" id="todos" name="filter" class="button__filter--game">
+                <label for="todos">Todos</label>
+                
+                <input type="radio" value="psn" id="psn" name="filter" class="button__filter--game">
+                <label for="psn">PSN</label>
+                
+                <input type="radio" value="snes" id="snes" name="filter" class="button__filter--game">
+                <label for="snes">SNES</label>
+                
+                <input type="radio" value="lorem" id="lorem" name="filter" class="button__filter--game">
+                <label for="lorem">Lorem</label>
+
+                <input type="radio" value="lorem" id="lorem2" name="filter" class="button__filter--game">
+                <label for="lorem2">Lorem</label>
+
+                <input type="radio" value="lorem" id="lorem3" name="filter" class="button__filter--game">
+                <label for="lorem3">Lorem</label>
+
+                <input type="radio" value="lorem" id="lorem4" name="filter" class="button__filter--game">
+                <label for="lorem4">Lorem</label>
+
+                <input type="radio" value="lorem" id="lorem5" name="filter" class="button__filter--game">
+                <label for="lorem5">Lorem</label>
+
+                <input type="radio" value="lorem" id="lorem6" name="filter" class="button__filter--game">
+                <label for="lorem6">Lorem</label>
+
+            </div>
+
+            <div class="games__display">
+
+                <div class="games__game">
+                    <img src="./img/snowboardkids2.png" alt="snowboardkids2">
+                    <div class="games__game__description">
+                        <h2 class="game__name">Snowboard Kids 2 </h2>
+                        <h3 class="game__data">Nintendo 64 - 1999</h3>
+                    </div>
+                </div>
+
+                <div class="games__game">
+                    <img src="./img/snowboardkids2.png" alt="snowboardkids2">
+                    <div class="games__game__description">
+                        <h2 class="game__name">Snowboard Kids 2 </h2>
+                        <h3 class="game__data">Nintendo 64 - 1999</h3>
+                    </div>
+                </div>
+
+                <div class="games__game">
+                    <img src="./img/snowboardkids2.png" alt="snowboardkids2">
+                    <div class="games__game__description">
+                        <h2 class="game__name">Snowboard Kids 2 </h2>
+                        <h3 class="game__data">Nintendo 64 - 1999</h3>
+                    </div>
+                </div>
+                
+            </div>
+
+            <button class="more__games">Carregar mais jogos</button>
+
+        </main>
+
+        <aside class="games__search">
+            <div class="placeholder">placeholder</div>
+        </aside>
+
+    </div>
+
     <footer>
 
     </footer>
+    
 </body>
+
 </html>
