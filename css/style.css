@@ -300,4 +300,21 @@ body {
     max-width: 275px;
     background-color: #232038;
 }
+footer{
+    
+    width: 1435px;
+    height: 123px;
+    left: 5px;
+    top: 1384px;
 
+    background: #242239;
+}
+footer p{
+    
+    margin-left: 13%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+
+    padding-top: 5%;
+}
