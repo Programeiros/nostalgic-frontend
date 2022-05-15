@@ -296,10 +296,20 @@ body {
 
 .games__search {
     width: 90%;
-    height: 300px;
     max-width: 275px;
-    background-color: #232038;
 }
+#txt__search{
+    width: 100%;
+    background: rgba(43, 47, 74, 0.7);
+    border-radius: 13px;
+    height: 33px;
+    border: none;
+    color: white;
+}
+#txt__search::placeholder{
+    padding-left: 30px;
+}
+
 footer{
     
     width: 100%;
